@@ -1,0 +1,79 @@
+:root{
+  --logoTestcolor:#2874b9;
+  --logoHcolor: #1596d4;
+  --basecolor1:#ffcf2a;
+  --basecolor2:#f26322;
+  --basecolor3:#cc5127;
+  --blue:#0052cc;
+  --yellow: #F5C32C;
+  --orange: #FCA61F;
+  --black: #242D49;
+  --gray:#788097;
+  --blueCard: #DDF8FE;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 /8%);
+  --orangecard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --nevTexcolor: #000;
+  --headingTextcolor:#242D49;
+  --footerColor:#eae6ff;
+  --navebarshodo: 0 2px 10px rgb(0 0 0 / 25%);
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* ........... */
+.navBarShadow{
+  box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
+}
+.hero_linear-gradient1{
+  background-image: linear-gradient(180deg, #FFFFFF 6.96%, #DEEBFF 90.95%);
+}
+.bgcolor2{
+  background-color: #deebff; 
+}
+/* white */
+.bgcolor21{  background-color: #eae6ff;}
+.inear-gradient3{
+  background-image: linear-gradient(180deg, #EAE6FF 0%, rgba(234, 230, 255, 0) 100%);
+}
+
+.linear-gradient_4{
+  background-image: linear-gradient(180deg, #DEEBFF 0%, #FFFFFF 100%);
+}
+.bgcolor5{
+  background-color: #c0b6f2;
+}
+.footercolor{
+  background-color: #f4f5f7;
+}
+/* ....... */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
