@@ -1,12 +1,12 @@
 import styles from '../styles/Home.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AutoPlay from './components/CarouselPoto';
 import HotProducts from './components/HotProducts';
 import FeaturedProducts from './components/FeaturedProducts';
 import AboutWork from './components/AboutWork';
 import WhyHTBox from './WhyHTBox';
 import Customers from './components/Customers';
 import Testimonials from './components/Testimonials';
+import Carouselpoto from './components/Carouselpoto';
 
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
     <>
     <div className='container_home mt-5 hero_linear-gradient1 pb-5'style={{zIndex:"5"}}>
     <div className='CarouselPotoBox mt-5 pt-5 m-auto '>
-    <AutoPlay/>
+    <Carouselpoto/>
     </div>
     <h1 className=' text-center'>WELCOME TO OUR WEBSITE</h1>
     {/* ............ */}
