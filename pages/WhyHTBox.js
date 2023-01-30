@@ -60,11 +60,11 @@ const WhyHTBox = () => {
   display:flex;
   height:50px;
   width: 50px;
-background-image: linear-gradient(180deg, #1596d4 6.96%, #ffcf2a 90.95%);
+// background-image: linear-gradient(180deg, #1596d4 6.96%, #ffcf2a 90.95%);
   
-  // background-image: linear-gradient(45deg, #ffcf2a 6.96%, #f26322 90.95%);
+  background: #c0b6f2;
   border-radius:50%;
-color:#fff;
+color:#333;
 justify-content:center;
   align-items:center;
 }
