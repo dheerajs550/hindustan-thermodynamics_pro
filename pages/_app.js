@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';
 import Navebar from './components/Navebar';
+import WhatsApp from './components/WhatsApp';
 function MyApp({ Component, pageProps }) {
   return<>
   <Navebar/>
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
 
   <Component {...pageProps} />
  </div>
+ <WhatsApp/>
   <Footer/>
   </>
 }

@@ -9,7 +9,7 @@ const Customers = () => {
          Microsoft, or 3,000 others to see for yourself.
         </p>
 
-        <div className='row ml-0 mr-0 justify-content-around  p-3 pb-0' >
+        {/* <div className='row ml-0 mr-0 justify-content-around  p-3 pb-0' >
             <div className='col-md-2 customers_Logo mb-3 d-flex justify-content-center align-items-center'>
                 logo
             </div>
@@ -21,8 +21,8 @@ const Customers = () => {
             </div>
             
 
-        </div>
-        <div className='row ml-0 mr-0 justify-content-around    p-3 pt-0 ' >
+        </div> */}
+        {/* <div className='row ml-0 mr-0 justify-content-around    p-3 pt-0 ' >
         <div className='col-md-2 customers_Logo mb-3 d-flex justify-content-center align-items-center'>
                 logo
             </div>
@@ -33,7 +33,7 @@ const Customers = () => {
                 logo
             </div>
 
-        </div>
+        </div> */}
     </div>
     <style jsx>{`
 .customers_Logo {
@@ -43,11 +43,11 @@ const Customers = () => {
   box-shadow: 0 0 45px 1px #d0d0d0;
  
 }
-  .customers_Logo:hover{
-    box-shadow: 0 0 20px 8px #d0d0d0;
+  // .customers_Logo:hover{
+  //   box-shadow: 0 0 20px 8px #d0d0d0;
  
 
-  }
+  // }
 
 `}</style>
     </>

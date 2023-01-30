@@ -9,16 +9,16 @@ const Navebar = () => {
       <img src="logo11.png" alt="logo" style={{width:"100px", height:"100%"}}/>
     </div>
    <div className="mideaclass d-flex justify-content-between align-items-center col-md-6 ml-md-auto">
-      <div className="">
+      <div className="battonhv battonhv_active">
         <Link className="Linkss"  href="/" style={{ textDecoration:"none"}} > home<span className="sr-only">(current)</span></Link>
       </div>
-      <div className="">
+      <div className="battonhv">
         <Link className="Links"  href="/about" style={{ textDecoration:"none"}} >About</Link>
       </div>
-      <div className="">
+      <div className="battonhv">
         <Link className="Links "  href="/products" style={{ textDecoration:"none"}} >Products</Link>
       </div>
-      <div className="">
+      <div className="battonhv">
       <Link className="Links"  href="/contact" style={{ textDecoration:"none"}} >Contact</Link>
     </div>
     </div>
@@ -56,6 +56,25 @@ const Navebar = () => {
     margin-top:2rem
   }
 }
+
+.battonhv:hover{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:7PX;
+ color:#FFF;
+  border-radius:13px;
+  background-image: linear-gradient(45deg, #ffcf2a 6.96%, #f26322 90.95%);
+}
+// .battonhv_active{
+//   display:flex;
+//   justify-content:center;
+//   align-items:center;
+//   padding:7PX;
+//  color:#FFF;
+//   border-radius:13px;
+//   background-image: linear-gradient(45deg, #ffcf2a 6.96%, #f26322 90.95%);
+// }
 
 `}</style>
    </>
