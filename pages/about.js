@@ -7,9 +7,9 @@ const about = () => {
 <h1 className='headingText'>ABOUT_US</h1>
     </div>
 <div className='text_box '>
-  <div className='text_box2 m-auto'>
+  <div className='text_box2 m-auto pb-5'>
 
-<h2>Hindustan Thermodynamics</h2>
+<h2 className='mainheding'>Hindustan Thermodynamics</h2>
 <p>Welcome to the world of Industrial Heating Systems. As the leading professional manufacturers and service providers,
    in the field of various kinds of heating elements, our valuable experience over the years, come handy in
    impressive product development. Consider us the synonyms of durability, reliability and utmost customer satisfaction.</p>
@@ -35,7 +35,7 @@ TF heaters
 .container_about {
   background-image: linear-gradient(180deg, #1596d4 6.96%, #fff 90.95%);
   // background:var(--logoTestcolor);
-  height: 70vh;
+  height: 50vh;
   width: 100%;
 }
 .headingText{
@@ -43,7 +43,7 @@ TF heaters
  
   max-width:700px;
   position:absolute;
-  top:50%;
+  top:30%;
   left:50%;
   transform:translate(-50%,-50%)
 }
@@ -59,6 +59,10 @@ TF heaters
 .heading_text{
   font-size:2rem;
   color:#000;
+}
+.mainheding{
+  border-bottom: 5px solid #f26322;
+  max-width:450px ;
 }
 
 `}</style>

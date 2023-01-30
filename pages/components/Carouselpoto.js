@@ -4,29 +4,33 @@ import Slider from "react-slick";
 export default class Carouselpoto extends Component {
   render() {
     const settings = {
-      dots: true,
+      // dots: true,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       speed: 500,
-      autoplaySpeed: 500,
+      autoplaySpeed: 2000,
       cssEase: "linear"
     };
     return (<>
      
-        <h2>this is some text</h2>
+        
         <Slider {...settings}>
-          <div className="pohoto_Box_Slaitd">
-          <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" style={{width:"100%"}}/>
-   
+          <div className="pohoto_Box_Slaitd d-flex">
+          {/* <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" style={{width:"100%"}}/> */}
+            <h1 className="heading">this is heaing one WELCOME TO OUR WEBSITE </h1>
+
+           
           </div>
-          <div className="pohoto_Box_Slaitd">
-          <img src="https://m.media-amazon.com/images/I/91GUw+VWZ0L._SX679_.jpg" style={{width:"100%"}}/>
-    
+          <div className="pohoto_Box_Slaitd d-flex">
+          {/* <img src="https://m.media-amazon.com/images/I/91GUw+VWZ0L._SX679_.jpg" style={{width:"100%"}}/> */}
+          <h1 className="heading">this is heaing one WELCOME TO OUR WEBSITE </h1>
+
           </div>
-          <div className="pohoto_Box_Slaitd">
-          <img src="https://m.media-amazon.com/images/I/51mZf+UsQ9L._SX300_SY300_.jpg" style={{width:"100%"}}/>
+          <div className="pohoto_Box_Slaitd d-flex">
+          {/* <img src="https://m.media-amazon.com/images/I/51mZf+UsQ9L._SX300_SY300_.jpg" style={{width:"100%"}}/> */}
+          <h1 className="heading">this is heaing one WELCOME TO OUR WEBSITE </h1>
 
           </div>
          
@@ -36,19 +40,15 @@ export default class Carouselpoto extends Component {
       
       <style jsx>{`
 .pohoto_Box_Slaitd {
-  // background:red;
+  // background:#1596d4;
   // box-shadow:var(--boxShadow);
-  height: 50vh;
+  height: 70vh;
   width: 100%;
- 
+  justify-content:center;
+  align-items:center;
+  color:#fff;
 }
-  
-.CarouselPotoBox{
-  // background:var(--yellow);
-  // box-shadow:var(--boxShadow);
-  height: 50vh;
-  width: 99%;
-}
+
 :global(.slick-next) {
     right: 30px;
   }
