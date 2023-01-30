@@ -8,7 +8,7 @@ import Navebar from './components/Navebar';
 function MyApp({ Component, pageProps }) {
   return<>
   <Navebar/>
- <div className='mt-3'>
+ <div className=''>
 
   <Component {...pageProps} />
  </div>

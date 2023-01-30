@@ -12,7 +12,7 @@ import Carouselpoto from './components/Carouselpoto';
 export default function Home() {
   return (
     <>
-    <div className='container_home mt-5 hero_linear-gradient1 pb-5'style={{zIndex:"5"}}>
+    <div className='container_home  hero_linear-gradient1 pb-5'style={{zIndex:"5"}}>
     <div className='CarouselPotoBox mt-5 pt-5 m-auto '>
     <Carouselpoto/>
     </div>

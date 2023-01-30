@@ -4,81 +4,61 @@ import React from 'react'
 const Navebar = () => {
   return (
    <>
-   <div className='container_home d-flex justify-content-between  navBarShadow' style={{zIndex:"9"}}>
-   <Link className="navbar-logo" href="#">
-    <div className=' rounded-circle m-3' style={{ height:"7vh"}}>
-      <img src="logo1.jpeg" alt="logo" style={{width:"100%", height:"100%"}}/>
+   <div className='navbarItems d-md-flex' style={{zIndex:"9"}}>
+    <div className='col-md-3 logoBox'>
+      <img src="logo11.png" alt="logo" style={{width:"100px", height:"100%"}}/>
     </div>
-   </Link>
-   <div className="d-flex">
-      <div className="nav_item_box box_active rounded-pill">
-        <Link className="Links" style={{color:" var(--nevTexcolor)"}} href="#">Home <span className="sr-only">(current)</span></Link>
+   <div className="mideaclass d-flex justify-content-between align-items-center col-md-6 ml-md-auto">
+      <div className="">
+        <Link className="Linkss"  href="/" style={{ textDecoration:"none"}} > home<span className="sr-only">(current)</span></Link>
       </div>
-      <div className="nav_item_box pt-2 pl-4 pr-4 rounded-pill  ">
-        <Link className="Links" style={{color:" var(--nevTexcolor)"}} href="/about">About</Link>
+      <div className="">
+        <Link className="Links"  href="/about" style={{ textDecoration:"none"}} >About</Link>
       </div>
-      <div className="nav_item_box pt-2 pl-4 pr-4 rounded-pill">
-        <Link className="Links " style={{color:" var(--nevTexcolor)"}} href="/products">Products</Link>
+      <div className="">
+        <Link className="Links "  href="/products" style={{ textDecoration:"none"}} >Products</Link>
       </div>
-      <div className="nav_item_box pt-2 pl-4 pr-4 rounded-pill">
-      <Link className="Links" style={{color:" var(--nevTexcolor)"}} href="/contact">Contact Us</Link>
+      <div className="">
+      <Link className="Links"  href="/contact" style={{ textDecoration:"none"}} >Contact</Link>
     </div>
     </div>
    </div>
    <style jsx>{`
-.container_home {
-  background:#FFF;
-  box-shadow:var(--navebarshodo);
-  height: 10vh;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  diplay:flex;
-}
-.nav_item_box{
-  margin:15px
-}
-.box_active{
-  background:var(--blue);
-  padding: 10px 26px;
-  border: 1px solid var(--blue);
+.navbarItems{
+  justify-content:space-between;
+  align-items:center;
+  font-size:1.2rem;
+  padding:0 30px;
+  // background-color:#222;
+  // background-image: linear-gradient(180deg, #1596d4 6.96%, #fff 90.95%);
+  background-image: linear-gradient(45deg, #ffcf2a 6.96%, #f26322 90.95%);
+  box-shadow:0 5px 15px rgba(0, 0, 0, 0.25);
+  width:95%;
+  height:80px;
+  border-radius:13px;
+  position:fixed;
+  top: 20px;
+  left:50%;
+  transform:translate( -50%);
 }
 
-.navbar-logo{
-  margin:15px
+.logoBox{
+  width:60px;
+  height:60px;
 }
-.logo{
-  padding: 10px 26px;
-  background:var(--blue);
-  color:var(--gray);
+@media only screen and (max-width: 600px) {
+  .logoBox {
+    display:none;
+  }
+  .mideaclass{
+    margin-top:2rem
+  }
 }
+
 `}</style>
    </>
   )
 }
 
 export default Navebar
-{/* <nav className="navbar navbar-expand-lg navbar-light bg-primary">
-  <Link className="navbar-brand" href="/home">Navbar</Link>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-  <form className="form-inline mr-auto my-2 my-lg-0">
-</form>
-    <ul className="navbar-nav  mt-2 mt-lg-0">
-      <li className="nav_item_box active">
-        <Link className="Link" href="/home">Home <span className="sr-only">(current)</span></Link>
-      </li>
-      <li className="nav_item_box">
-        <Link className="Link" href="/about">About</Link>
-      </li>
-      <li className="nav_item_box">
-        <Link className="Link " href="/products">Products</Link>
-      </li>
-      <li className="nav_item_box">
-      <Link className="Link "  href="/contact">Contact Us</Link>
-    </li>
-    </ul>
-  </div>
-</nav> */}
+ 
