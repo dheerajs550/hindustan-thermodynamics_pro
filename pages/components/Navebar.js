@@ -25,13 +25,15 @@ const Navebar = () => {
    </div>
    <style jsx>{`
 .navbarItems{
+  background:#fff;
+
   justify-content:space-between;
   align-items:center;
   font-size:1.2rem;
   padding:0 30px;
   // background-color:#222;
   // background-image: linear-gradient(180deg, #1596d4 6.96%, #fff 90.95%);
-  background-image: linear-gradient(45deg, #ffcf2a 6.96%, #f26322 90.95%);
+  // background-image: linear-gradient(45deg, #ffcf2a 6.96%, #f26322 90.95%);
   box-shadow:0 5px 15px rgba(0, 0, 0, 0.25);
   width:95%;
   height:80px;
