@@ -10,22 +10,22 @@ const Footer = () => {
    <div className=' Footer col-md-3 d-flex justify-content-center align-items-center p-3'>
     <img src='logo11.png' alt="footer_logo" style={{width:"100%" , height:"100%"}} />
    </div>
-   <div className=' Footer col-md-2 d-flex flex-column justify-content-between align-items-center p-3'>
+   <div className=' Footer col-md-2 d-flex flex-column justify-content-between  p-3'>
     <h6 className='futaheding'>quick Link</h6>
-        <Link className="Linkss "  href="/" style={{ textDecoration:"none" , color:"#000" , fontSize:"1.5em" }} > home<span className="sr-only">(current)</span></Link>
-        <Link className="Links"  href="/about" style={{ textDecoration:"none"  , color:"#000" ,fontSize:"1.5em" }} >About</Link>
-        <Link className="Links "  href="/products" style={{ textDecoration:"none"  , color:"#000", fontSize:"1.5em" }} >Products</Link>
-        <Link className="Links "  href="/Career" style={{ textDecoration:"none"  , color:"#000", fontSize:"1.5em" }} >Career</Link>
-        <Link className="Links"  href="/contact" style={{ textDecoration:"none"  , color:"#000" ,fontSize:"1.5em" }} >Contact us</Link>
+        <Link className="Linkss "  href="/" style={{ textDecoration:"none" , color:"#000" , fontSize:"1.3em" }} > home<span className="sr-only">(current)</span></Link>
+        <Link className="Links"  href="/about" style={{ textDecoration:"none"  , color:"#000" ,fontSize:"1.3em" }} >About</Link>
+        <Link className="Links "  href="/products" style={{ textDecoration:"none"  , color:"#000", fontSize:"1.3em" }} >Products</Link>
+        <Link className="Links "  href="/Career" style={{ textDecoration:"none"  , color:"#000", fontSize:"1.3em" }} >Career</Link>
+        <Link className="Links"  href="/contact" style={{ textDecoration:"none"  , color:"#000" ,fontSize:"1.3sem" }} >Contact us</Link>
   
    </div>
-   <div className=' Footer col-md-3 d-flex flex-column justify-content-between align-items-center p-3'>
+   <div className=' Footer col-md-3  p-3'>
     <h6 className='futaheding'>Contact</h6>
     {/* <img src='logo1.jpeg' alt="footer_logo" style={{width:"25%" , height:"5rem"}} /> */}
     
-    <div className='text-color '><img src='loc.svg' alt="footer_logo" style={{width:"25px" , height:"25px",margin:"3px" }} /> 03 Gulshan Apartment,<br/> 132 Saket Nagar, Indore (M.P.) 452018</div>
-    <div><img src='phone.svg' alt="footer_logo" style={{width:"25px" , height:"25px" ,margin:"3px"}} />0731-4679229</div>
-    <div><img src='email.svg' alt="footer_logo" style={{width:"25px" , height:"25px" ,margin:"3px"}} />email@website.com</div>
+    <div className='text-color '><img src='loc.svg' alt="footer_logo" style={{width:"15px" , height:"15px",margin:"3px" }} /> 03 Gulshan Apartment,<br/> 132 Saket Nagar, Indore (M.P.) 452018</div>
+    <div className="fontsizes9" ><img src='phone.svg' alt="footer_logo" style={{width:"15px" , height:"15px" ,margin:"3px" }} />0731-4679229</div>
+    <div className="fontsizes9"><img src='email.svg' alt="footer_logo" style={{width:"15px" , height:"15px" ,margin:"3px" }} />email@website.com</div>
    
    </div>
    <div className=' Footer col-md-3 p-3'>
@@ -56,7 +56,7 @@ Developed & Managed Dheeraj sharma.
 }
 .text-color{
   color:var(--headingTextcolor);
-  font-size:1rem;
+  font-size:1.3rem;
 }
 
   .line{
@@ -78,6 +78,9 @@ Developed & Managed Dheeraj sharma.
   }
   .futaheding{
     font-size:2.3rem;
+  }
+  .fontsizes9{
+    font-size:1.3rem;
   }
 `}</style>
   </>
