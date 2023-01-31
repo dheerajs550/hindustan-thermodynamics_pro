@@ -13,9 +13,9 @@ export default function Home() {
   return (
     <>
     <div className='container_home  hero_linear-gradient1 pb-5'style={{zIndex:"5"}}>
-    <div className='CarouselPotoBox  p-1  '>
     <Carouselpoto/>
-    </div>
+    {/* <div className='CarouselPotoBox    '>
+    </div> */}
     
     
     </div>
@@ -30,9 +30,9 @@ export default function Home() {
 <FeaturedProducts/>
     <style jsx>{`
 .container_home {
-  background-image: linear-gradient(180deg, #2874b9 6.96%, #fff 90.95%);
+  // background-image: linear-gradient(180deg, #2874b9 6.96%, #fff 90.95%);
 
-  // background:var(--purple);
+  background:#333;
   // box-shadow:var(--boxShadow);
   height: 100vh;
   width: 100%;
@@ -40,22 +40,15 @@ export default function Home() {
 }
   
 .CarouselPotoBox{
-  // background:var(--yellow);
-  // box-shadow:var(--boxShadow);
-  // background-color:#222;
-  // background-image: linear-gradient(180deg, #1596d4 6.96%, #fff 90.95%);
-  // box-shadow:0 5px 15px rgba(0, 0, 0, 0.25);
-  // position:fixed;
-    height: 80%;
-    justify-content:space-between;
-    align-items:center;
-    font-size:1.2rem;
-    padding:0 30px;
-    // background-image: linear-gradient(45deg, #ffcf2a 6.96%, #f26322 90.95%);
-    width:95%;
-    top: 80px;
-    left:50%;
-    transform:translate(3%, 21% );
+    height: 100vh;
+    // justify-content:space-between;
+    // align-items:center;
+    // font-size:1.2rem;
+    // padding:0 30px;
+    width:100%;
+    // top: 0px;
+    // left:0%;
+    // transform:translate(3%, 21% );
   
   
 }

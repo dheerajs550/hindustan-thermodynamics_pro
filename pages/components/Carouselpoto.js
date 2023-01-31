@@ -18,19 +18,23 @@ export default class Carouselpoto extends Component {
         
         <Slider {...settings}>
           <div className="pohoto_Box_Slaitd d-flex">
+          <img src="img1.jpg" style={{width:"100%"}}/>
+
           {/* <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" style={{width:"100%"}}/> */}
-            <h1 className="heading">this is heaing one WELCOME TO OUR WEBSITE </h1>
+            {/* <h1 className="heading">this is heaing one WELCOME TO OUR WEBSITE </h1> */}
 
            
           </div>
           <div className="pohoto_Box_Slaitd d-flex">
-          {/* <img src="https://m.media-amazon.com/images/I/91GUw+VWZ0L._SX679_.jpg" style={{width:"100%"}}/> */}
-          <h1 className="heading">this is heaing one WELCOME TO OUR WEBSITE </h1>
+          <img src="img2.jpg" style={{width:"100%"}}/>
+          {/* <h1 className="heading">this is heaing one WELCOME TO OUR WEBSITE </h1> */}
 
           </div>
           <div className="pohoto_Box_Slaitd d-flex">
+          <img src="img3.jpg" style={{width:"100%"}}/>
+
           {/* <img src="https://m.media-amazon.com/images/I/51mZf+UsQ9L._SX300_SY300_.jpg" style={{width:"100%"}}/> */}
-          <h1 className="heading">this is heaing one WELCOME TO OUR WEBSITE </h1>
+          {/* <h1 className="heading">this is heaing one WELCOME TO OUR WEBSITE </h1> */}
 
           </div>
          
@@ -42,7 +46,7 @@ export default class Carouselpoto extends Component {
 .pohoto_Box_Slaitd {
   // background:#1596d4;
   // box-shadow:var(--boxShadow);
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   justify-content:center;
   align-items:center;
