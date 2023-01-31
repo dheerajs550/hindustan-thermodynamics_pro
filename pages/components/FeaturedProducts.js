@@ -29,9 +29,15 @@ const FeaturedProducts = () => {
 
     </div>
       </div>
-<div className=' bgcolor5  d-flex justify-content-center align-items-center flex-column p-5' style={{width:"100%"}} >
-<h1 className=' text-center'>Start free with Confluence</h1>
-<button type="button" className="btn btn-primary">Primary</button>
+<div className=' bgcolor2  d-flex justify-content-center align-items-center flex-column p-5' style={{width:"100%"}} >
+<h1 className=' headtextsub text-center'>SUBSCRIBE FOR  <span>NEWSLETTER</span></h1>
+
+<form className="fromcolor d-md-flex justify-content-center align-items-center  " action='' method='post'>
+  <label className='label_text' for="email">Sign up to get latest updates and news.</label>
+  <input className='inputEmail m-2 ' type="email" id="email" name="Email"  placeholder='Enter your email' />
+  <input className='btnsubmit m-2' type="submit"/>
+</form>
+
 </div>
 
       <style jsx>{`
@@ -52,8 +58,37 @@ const FeaturedProducts = () => {
   border-radius: 13px;
 }
   
+.btnsubmit{
+  background:#2874B9;
+  border-radius: 3px;
+  border:none;
+  color:#fff;
+  font-size:1.2rem;
+  padding:7px 13px;
+}
+.inputEmail{
+  background:#fff;
+  border-radius: 3px;
+  border:1px solid #999;
+  color:#000 ;
+  font-size:1.2rem;
+  padding:7px 13px;
+}
+.label_text{
+  font-size:1rem;
+  color:#333 ;
+}
+.headtextsub{
+  color:333;
+}
+.headtextsub span{
+  color:#2874b9;
 
-
+}
+.fromcolor{
+   padding:7px 70px;
+  background:#fff;
+}
 `}</style>
     </>
   )
