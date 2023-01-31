@@ -1,5 +1,6 @@
 import React from 'react'
 import { FiAlignJustify } from 'react-icons/fi';
+import { Link } from 'next/link';
 
 const NewNav = () => {
   return (
@@ -12,10 +13,10 @@ const NewNav = () => {
 
         <label className='logo' >DesignX</label>
         <ul>
-            <li><a className='active' href='#'>Home</a></li>
-            <li><a href='#'>About</a></li>
-            <li><a href='#'>Products</a></li>
-            <li><a href='#'>Contact</a></li>
+            <li><a className='active' href='/'> Home</a></li>
+            <li><a href='/about'>About</a></li>
+            <li><a href='/products'>Products</a></li>
+            <li><a href='/contact'>Contact</a></li>
         </ul>
         
         </nav> 
@@ -30,13 +31,30 @@ const NewNav = () => {
     list-style:none;
 }
 nav{
-    background:#0082e6;
+    z-index:999;
+    background:#fff;
     height:80px;
-    width:100%;
+    width:95%;
+    position:fixed;
+    border-radius:13px;
+    top: 20px;
+    left:50%;
+  box-shadow:0 5px 15px rgba(0, 0, 0, 0.25);
+  transform:translate( -50%);
+
+}
+{
+  
+  justify-content:space-between;
+  align-items:center;
+  font-size:1.2rem;
+  padding:0 30px;
+  
+ 
 }
 
 label.logo{
-    color:white;
+    color:var(--logoTestcolor);
     font-size:35px;
     line-height:80px;
     padding:0 100px;
@@ -46,6 +64,7 @@ label.logo{
 nav ul{
     float:right;
     margin-right:20px
+    
 }
 nav ul li{
     display: inline-block;
@@ -92,27 +111,32 @@ a.active,a:hover{
 @media(max-width:858px){
     .checkbtn{
        display:block;
-
+       color:var(--logoTestcolor)
     }
     ul{
         position:fixed;
         width:100%;
         height:100vh;
-        background:#2c3e50;
-  background-image: linear-gradient(180deg, #fff 6.96%,  #1596d4 90.95%);  height: 70vh;
-
-        top:80px;
-        left:-100%;
+        // background:#2c3e50;
+         background-image: linear-gradient(180deg, #fff 6.96%,  #1596d4 90.95%);  
+        left:-103%;
         text-aligh:center;
         transition:all .5s;
+      
 
     }
+
 // ......this is code by me
     nav ul li{
         display:block;
         line-height:90px;
         text-aligh:center;
         padding:0px 19px;
+    }
+
+    nav ul li:hover{
+        background-image: linear-gradient(45deg, #ffcf2a 6.96%, #f26322 90.95%);
+        border-radius:13px;
     }
     nav ul li a{
         background:none;
