@@ -41,24 +41,50 @@ Mr. Sushil Pathak </p>
     <div className=' col-md-5  ' style={{borderLeft:"2px solid #f26322"}}>
   <h2 className='pt-5' >Contact form</h2>
 
-      <form>
+      <form action='https://formspree.io/f/xrgveajd'
+      method='post'>
 <div className='col-12 div11 d-md-flex'>
 <label>Your name</label>
-<input type={"text"} placeholder={"enter your name"}/>
+<input 
+type="text"
+ placeholder="enter your name"
+ name='Name'
+ required
+ autoCapitalize='off'
+
+ />
 </div>
 <div className='col-12 div11  d-md-flex'>
 <label>Your Email</label>
-<input type={"email"} placeholder={"enter your email"}/>
+<input
+ type="email"
+  placeholder="enter your email"
+  name='Emaul'
+  required
+  autoCapitalize='off'
+  />
 </div>
 <div className='col-12 div11  d-md-flex'>
 <label>Your Phone</label>
-<input type={"number"} placeholder={"enter your number"}/>
+<input
+ type="number" 
+ placeholder="enter your number"
+ name='Number'
+ required
+ autoCapitalize='off'
+ />
 </div>
 <div className='col-12 div11  d-md-flex'>
 <label>Your Message</label>
-<textarea type={"textarea"} placeholder={"some message"}/>
+<textarea 
+type="textarea"
+ placeholder="some message"
+ name='Message'
+ required
+ autoCapitalize='off'
+ />
 </div>
-<input className='submit11' type={"submit"}/>
+<input className='submit11' type="submit"/>
       </form>
 
     </div>
