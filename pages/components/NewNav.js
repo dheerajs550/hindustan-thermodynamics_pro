@@ -11,7 +11,7 @@ const NewNav = () => {
             <FiAlignJustify/>
         </label>
 
-        <label className='logo' >DesignX</label>
+        <label className='logo' >HT</label>
         <ul>
             <li><a className='active' href='/'> Home</a></li>
             <li><a href='/about'>About</a></li>
